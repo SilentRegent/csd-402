@@ -1,4 +1,8 @@
-
+/*
+ * Zachary Anderson
+ * 9-3-25
+ * M6 Assignment
+ */
 public class Fan {
 
     // Constants

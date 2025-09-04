@@ -1,3 +1,8 @@
+/*
+ * Zachary Anderson
+ * 9-3-25
+ * M6 Assignment
+ */
 public class FanTest {
     public static void main(String[] args) {
         // Fan using default constructor
