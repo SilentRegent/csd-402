@@ -35,48 +35,48 @@ public class Fan {
 
     // Getters and Setters
     public int getSpeed() {
-        return speed;
+        return this.speed;  // added 'this'
     }
 
     public void setSpeed(int speed) {
         if (speed >= STOPPED && speed <= FAST) {
-            this.speed = speed;
+            this.speed = speed;  // added 'this'
         } else {
             System.out.println("Invalid speed value.");
         }
     }
 
     public boolean isOn() {
-        return on;
+        return this.on;  // added 'this'
     }
 
     public void setOn(boolean on) {
-        this.on = on;
+        this.on = on;  // added 'this'
     }
 
     public double getRadius() {
-        return radius;
+        return this.radius;  // added 'this'
     }
 
     public void setRadius(double radius) {
-        this.radius = radius;
+        this.radius = radius;  // added 'this'
     }
 
     public String getColor() {
-        return color;
+        return this.color;  // added 'this'
     }
 
     public void setColor(String color) {
-        this.color = color;
+        this.color = color;  // added 'this'
     }
 
     // toString method
     @Override
     public String toString() {
-        if (on) {
-            return "Fan is ON [speed=" + speed + ", radius=" + radius + ", color=" + color + "]";
+        if (this.on) {  // added 'this'
+            return "Fan is ON [speed=" + this.speed + ", radius=" + this.radius + ", color=" + this.color + "]";
         } else {
-            return "Fan is OFF [radius=" + radius + ", color=" + color + "]";
+            return "Fan is OFF [radius=" + this.radius + ", color=" + this.color + "]";
         }
     }
 }
